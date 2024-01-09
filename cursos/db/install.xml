@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<install version="2024010300">
+    <local>
+        <!-- Componente del plugin -->
+        <component name="cursos" version="2024010300" />
+    </local>
+    <moodle_version component="local_cursos" version="2024010300" />
+    <data>
+        <!-- Definición de la tabla de cursos -->
+        <table name="cursos" id="cursos" comment="Tabla de cursos">
+            <!-- Campo: Identificador del curso -->
+            <field name="id" type="int" unsigned="true" notnull="true" autoincrement="true" comment="Identificador del curso" />
+
+            <!-- Campo: Nombre completo del curso -->
+            <field name="fullname" type="text" notnull="true" comment="Nombre completo del curso" />
+
+            <!-- Campo: Nombre corto del curso -->
+            <field name="shortname" type="text" notnull="true" comment="Nombre corto del curso" />
+
+            <!-- Campo: Resumen del curso -->
+            <field name="summary" type="text" notnull="true" comment="Resumen del curso" />
+
+            <!-- Campo: Fecha de inicio del curso -->
+            <field name="startdate" type="int" notnull="true" comment="Fecha de inicio del curso" />
+
+            <!-- Campo: Fecha de finalización del curso -->
+            <field name="enddate" type="int" notnull="true" comment="Fecha de finalización del curso" />
+
+            <!-- Campo: Categoría del curso -->
+            <field name="category" type="text" notnull="true" comment="Categoría del curso" />
+
+            <!-- Clave primaria -->
+            <key name="primary" type="primary">
+                <field name="id" />
+            </key>
+        </table>
+    </data>
+</install>
